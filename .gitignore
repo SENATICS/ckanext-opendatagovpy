@@ -1,0 +1,15 @@
+*.egg
+*.egg-info
+*.pyc
+*.swo
+*.swp
+*~
+.DS_Store
+/.idea
+/.ropeproject
+/.vagrant
+/.venv*
+/build
+/dist
+\#*\#
+.\#*

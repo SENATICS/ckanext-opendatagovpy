@@ -1,0 +1,41 @@
+{% import 'macros/form.html' as form %}
+{% set data = data or {} %}
+{% set errors = errors or {} %}
+
+{{ form.input('valid_from', type='date', label=_('Valid from'), id='field-valid-from',
+    value=data['valid_from'], error=errors['valid_from'], classes=['control-medium']) }}
+
+{{ form.input('valid_until',  type='date', label=_('Valid until'), id='field-valid-until',
+    value=data['valid_until'], error=errors['valid_until'], classes=['control-medium']) }}
+
+{% set departments = [_('Asunción'), _('San Pedro'), _('Concepción'), _('Cordillera'), _('Guairá'), _('Caaguazú'),
+                        _('Caazapá'), _('Itapúa'), _('Misiones'), _('Paraguarí'), _('Alto Paraná'), _('Central'),
+                        _('Ñeembucú'), _('Amambay'), _('Canindeyú'), _('Presidente Hayes'), _('Alto Paraguay'),
+                        _('Boquerón')] %}
+
+<div class="control-group control-medium">
+    <label class="control-label" for="field-valid-spatial" class="control-label">{{_('Spatial Validity')}}</label>
+    <div class="controls">
+        <select id="field-valid-spatial" name="valid_spatial" style="width:334px;">
+	    {% set value = data.get('valid_spatial', '') %}
+        <option value="" disabled selected></option>
+	    {% for option in departments %}
+            <option value="{{option}}"{% if value == option %}selected='selected'{% endif %}>{{ option }}</option>
+	    {% endfor %}
+        </select>
+    </div>
+</div>
+
+{% set frequencies = [_('Yearly'), _('Monthly'), _('Weekly'), _('Daily')] %}
+<div class="control-group control-medium">
+    <label class="control-label" for="field-update-frequency" class="control-label">{{_('Update Frequency')}}</label>
+    <div class="controls">
+        <select id="field-update-frequency" name="update_frequency" style="width:334px;">
+	    {% set value = data.get('update_frequency', '') %}
+        <option value="" disabled selected></option>
+	    {% for option in frequencies %}
+            <option value="{{option}}"{% if value == option %}selected='selected'{% endif %}>{{ option }}</option>
+	    {% endfor %}
+        </select>
+    </div>
+</div>

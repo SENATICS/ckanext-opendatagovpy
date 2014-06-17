@@ -1,0 +1,449 @@
+body {
+ background: #000000;
+}
+
+/* Homepage CSS */
+.main.homepage {
+  padding: 0 0 20px 0;
+}
+
+.homepage .module-search{
+  height: 285px;
+}
+
+.homepage .module-search .search-form{
+  height: 265px;
+}
+
+.homepage .module-search .search-form .heading{
+  margin-top: 50px;
+}
+
+.main.homepage .module:first-child .module-heading {
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main.homepage .group-listing .box {
+  position: relative;
+}
+
+.homepage-slider-ng {
+  height: 400px;
+  position: relative;
+  background: #333;
+}
+.homepage-slider-ng:before,
+.homepage-slider-ng:after {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  z-index: 10;
+  content: ' ';
+  left: 0;
+  right: 0;
+}
+.homepage-slider-ng:before {
+  top: 0;
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.3)));
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background: -moz-linear-gradient(center bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  filter: progid:DageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.3)', endColorstr='rgba(0, 0, 0, 0)', GradientType=0);
+}
+.homepage-slider-ng:after {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(0, 0, 0, 0)));
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(center bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='rgba(0, 0, 0, 0.3)', GradientType=0);
+}
+.homepage-slider-ng .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 400px;
+  z-index: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.homepage-slider-ng .text-wrapper .text-container {
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: #000 2px 2px 5px;
+  font-size: 24px;
+  line-height: 32px;
+  width: 900px;
+  margin: 0 auto;
+}
+.homepage-slider-ng .text-wrapper .text-container h3,
+.homepage-slider-ng .text-wrapper .text-container .text-row {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  display: inline-block;
+  margin: 3px 0;
+}
+.homepage-slider-ng .text-wrapper .text-container h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.homepage-slider-ng .text-wrapper .text-container a {
+  color: #eee;
+  text-decoration: underline;
+}
+
+.homepage-slider-ng .text-wrapper .footer-container {
+  color: #fff;
+  text-shadow: #000 2px 2px 5px;
+  position:relative;
+  text-align:right;
+  font-weight:bold;
+  font-size:12px;
+  bottom:-62%;
+  z-index:20;
+}
+
+.homepage-slider-ng .text-wrapper .footer-container a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.homepage-slider-ng .boxes-wrapper {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.homepage-slider-ng .boxes-wrapper,
+.homepage-slider-ng .boxes-wrapper .home-box {
+  z-index: 10 !important;
+}
+
+.home-box {
+  height: 140px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  text-align: center;
+  background: #eee;
+  background: rgba(238, 238, 238, 0.8);
+  border: none;
+  -webkit-box-shadow: inset 1px 1px 0 #ffffff;
+  -moz-box-shadow: inset 1px 1px 0 #ffffff;
+  box-shadow: inset 1px 1px 0 #ffffff;
+}
+.home-box h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+.home-box .dataset-search {
+  margin-top: 20px;
+}
+.home-box .dataset-search input,
+.home-box .dataset-search button {
+  margin: 0;
+}
+
+.main.homepage #overlapped_widgets{
+    position:relative;
+    top:-250px;
+    z-index:10;
+    background:none;
+    margin-bottom:-250px;
+}
+
+/*                                                  */
+.schema-custom.disabled select,
+.schema-custom.disabled textarea {
+  color: #aaaaaa;
+  text-decoration: line-through;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+
+/*                                                  */
+
+#tag-cloud
+{
+background: rgba(206,206,206,0.4);
+}
+
+#tag-cloud text:hover
+{
+cursor: pointer;
+cursor: hand;
+}
+
+.institution {
+    float: right;
+    width: 450px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.homepage.layout-2 .stats {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  height: 220px;
+}
+
+/*                                                    */
+
+.logo img {
+margin-top: 10px;
+}
+
+.account-masthead {
+/*  background:  #465f6e;*/
+background: #000000;
+}
+.site-footer {
+   background-color: #000000;
+   border-top: 5px solid #d71e1e;
+   /*height: 100px;*/
+}
+[role="main"], .main {
+    background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.module-heading {
+    background-color: #8C0505;
+color: #FFFFFF;
+}
+
+.box {
+          -moz-box-shadow: 0 0 5px 5px #b9c3c8;
+          -webkit-box-shadow: 0 0 5px 5px #b9c3c8;
+          box-shadow: 0 0 5px 5px #b9c3c8;
+          box-shadow: 1px 1px 0 #FFFF inset;
+          opacity: 0.85;
+
+          /*background: rgba(70,95,110,0.4);*/
+
+
+         /*  background: #a6a6a6;
+          background: none repeat scroll 0% 0% #97adb1;*/
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none'
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjQxJSIgc3RvcC1jb2xvcj0iI2Y3OTYyMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQzJSIgc3RvcC1jb2xvcj0iI2Y3OTYyMSIgc3RvcC1vcGFjaXR5PSIwLjk2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iI2Y3OTYyMSIgc3RvcC1vcGFjaXR5PSIwLjk3Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2Y3OWEyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOWM2NjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(-45deg, rgba(70,95,110,1) 41%, rgba(70,95,110,0.96) 43%, rgba(70,95,110,0.97) 44%, rgba(70,99,116,1) 49%, rgba(,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(41%,rgba(70,95,110,1)), color-stop(43%,rgba(70,95,110,0.96)), color-stop(44%,rgba(70,95,110,0.97)), color-stop(49%,rgba(70,99,116,1)), color-stop(100%,rgba(72,143,180,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, rgba(70,95,110,1) 41%,rgba(70,95,110,0.96) 43%,rgba(70,95,110,0.97) 44%,rgba(70,99,116,1) 49%,rgba(72,143,180,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, rgba(70,95,110,1) 41%,rgba(70,95,110,0.96) 43%,rgba(70,95,110,0.97) 44%,rgba(70,99,116,1) 49%,rgba(72,143,180,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, rgba(70,95,110,1) 41%,rgba(70,95,110,0.96) 43%,rgba(70,95,110,0.97) 44%,rgba(70,99,116,1) 49%,rgba(72,143,180,1) 100%); /* IE10+ */
+background: linear-gradient(135deg, rgba(70,95,110,1) 41%,rgba(70,95,110,0.96) 43%,rgba(70,95,110,0.97) 44%,rgba(70,99,116,1) 49%,rgba(72,143,180,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79621', endColorstr='#f9c667',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+fin color*/
+}
+
+.homepage .stats h3 {
+    color: #FFFFFF;
+text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+text-align: center;
+}
+
+.homepage .stats ul li a b {
+   color: #d71e1e;
+text-shadow: 2px 1px 1px rgba(0, 0, 0, 1)
+}
+
+.homepage .stats ul li {
+    text-align: center;
+}
+
+.homepage .stats ul li a {
+ color: #d71e1e;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 1)
+}
+
+.homepage .stats ul li a b:hover {
+   color: #FFFFFF;
+
+}
+.homepage .stats ul li a:hover {
+ color:#FFFFFF;
+
+}
+
+.module-content.box p{
+color:#FFFFFF;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+.group-list .module-heading h3 a {
+color:#FFFFFF;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.masthead .navigation {
+   margin-right: -220px;
+   margin-top: 43px;
+   border: 0px;
+   border-radius: 0px;
+   background: #d71e1e;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background: #000000;
+   border-radius: 0px;
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+    background-color: #000000;
+    color: #FFFFFF;
+   border-radius: 0px;
+border-bottom: 3px solid #d71e1e;
+}
+
+.nav-pills > li > a {
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+border-radius: 0px;
+border-bottom: 3px solid #FFFFFF;
+}
+
+
+.masthead {
+background:#000;
+}
+/*.masthead {
+   height: 120px;
+ background: url('http://www.tabladeflandes.com/paraguay/asuncion_2010/Bahia-de-Asuncion-con-el-Palacio-de-Gobierno-enfrente..jpg') repeat scroll 0% 0% #272727;
+
+}
+*/
+
+
+.hero {
+background: none repeat scroll 0% 0% #FFFFFF;
+/*background: none repeat scroll 0% 0% #ECF0F1;*/
+ /* background: url("../../../base/images/fondo_senatics.jpg") no-repeat center center fixed;*/
+}
+
+.schema-custom {
+  font-size: 0;
+}
+.schema-custom label {
+  margin-bottom: 0;
+}
+.schema-custom input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 140px;
+}
+.schema-custom input:last-of-type {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.schema-custom .checkbox {
+  display: inline-block;
+  margin-left: 5px;
+}
+.schema-custom .checkbox input {
+  width: auto;
+}
+.schema-custom.disabled label,
+.schema-custom.disabled input {
+  color: #aaaaaa;
+  text-decoration: line-through;
+  text-shadow: none;
+}
+.schema-custom.disabled input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+.schema-custom.disabled .checkbox {
+  color: #444444;
+  text-decoration: none;
+}
+.schema-custom .checkbox.btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  position: relative;
+  top: 0;
+  left: 5px;
+  height: 1px;
+  width: 9px;
+  padding: 3px 8px;
+  line-height: 18px;
+}
+.schema-custom .checkbox.btn span {
+  display: none;
+  width: 30px;
+}
+.schema-custom .checkbox.btn:before {
+  position: relative;
+  top: 1px;
+  left: -1px;
+  color: #fff;
+}
+.schema-custom .checkbox.btn input {
+  display: none;
+}
+.schema-custom.disabled .checkbox.btn {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #cc5845;
+  background-image: -moz-linear-gradient(top, #d36452, #c14531);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d36452), to(#c14531));
+  background-image: -webkit-linear-gradient(top, #d36452, #c14531);
+  background-image: -o-linear-gradient(top, #d36452, #c14531);
+  background-image: linear-gradient(to bottom, #d36452, #c14531);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd36452', endColorstr='#ffc14531', GradientType=0);
+  border-color: #c14531 #c14531 #842f22;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #c14531;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.schema-custom.disabled .checkbox.btn:hover,
+.schema-custom.disabled .checkbox.btn:focus,
+.schema-custom.disabled .checkbox.btn:active,
+.schema-custom.disabled .checkbox.btn.active,
+.schema-custom.disabled .checkbox.btn.disabled,
+.schema-custom.disabled .checkbox.btn[disabled] {
+  color: #ffffff;
+  background-color: #c14531;
+  *background-color: #ad3e2c;
+}
+.schema-custom.disabled .checkbox.btn:active,
+.schema-custom.disabled .checkbox.btn.active {
+  background-color: #983627 \9;
+}
+.schema-custom.disabled .checkbox.btn .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}

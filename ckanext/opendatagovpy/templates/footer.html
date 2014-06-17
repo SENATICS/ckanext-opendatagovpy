@@ -1,0 +1,30 @@
+<footer class="site-footer">
+    <div class="container">
+        {% block footer_content %}
+        <div class="attribution">
+            {% block footer_attribution %}
+            <p><strong>{{ _('Based on') }} </strong> <a class="hide-text ckan-footer-logo"
+                                                         href="http://ckan.org">CKAN</a></p>
+            {% endblock %}
+            {% block footer_lang %}
+            {% snippet "snippets/language_selector.html" %}
+            {% endblock %}
+        </div>
+        <div class="institution">
+            <p>{{ _('Site built and maintained by') }} <a href="http://www.senatics.gov.py/" title="Secretaría Nacional de Tecnologías de la Información y Comunicación">{{ _('SENATICs') }}</a></br>
+               {{ _('with support from ') }} <a href="http://www.ceamso.org.py/es/proyectos/20-programa-de-democracia-y-gobernabilidad" title="Programa de Democracia y Gobernabilidad (USAID-CEAMSO)">{{ _('Programa de Democracia y Gobernabilidad') }}</a>(USAID-CEAMSO)</p>
+
+            <p>{{ _('2014 Secretaría Nacional de Tecnologías de la Información y Comunicación') }}</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" title="{{ _('This site is under an Attribution-ShareAlike 4.0 International Creative Commons license.') }}">
+            <img style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png">
+            </a>
+        </div>
+        {% endblock %}
+    </div>
+
+    {% block footer_debug %}
+    {% if g.debug %}
+    {% include 'snippets/debug.html' %}
+    {% endif %}
+    {% endblock %}
+</footer>

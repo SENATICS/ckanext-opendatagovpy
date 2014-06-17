@@ -1,0 +1,31 @@
+{% ckan_extends %}
+{% block extras scoped %}
+          {{ super() }}
+          {% if pkg_dict.valid_from %}
+          <tr>
+            <th scope="row" class="dataset-label">{{_('Valid from')}}</th>
+            <td class="dataset-details">{{ pkg_dict.valid_from}}</td>
+          </tr>
+          {% endif %}
+
+          {% if pkg_dict.valid_until %}
+          <tr>
+            <th scope="row" class="dataset-label">{{_('Valid until')}}</th>
+            <td class="dataset-details">{{ pkg_dict.valid_until}}</td>
+          </tr>
+          {% endif %}
+
+          {% if pkg_dict.valid_spatial %}
+          <tr>
+            <th scope="row" class="dataset-label">{{_('Spatial Validity')}}</th>
+            <td class="dataset-details">{{ pkg_dict.valid_spatial}}</td>
+          </tr>
+          {% endif %}
+
+          {% if pkg_dict.update_frequency %}
+          <tr>
+            <th scope="row" class="dataset-label">{{_('Update Frequency')}}</th>
+            <td class="dataset-details">{{ pkg_dict.update_frequency}}</td>
+          </tr>
+          {% endif %}
+{% endblock %}

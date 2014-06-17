@@ -1,0 +1,96 @@
+{% resource 'ckanext-opendatagovpy/scripts/resource-form.js' %}
+{% resource 'ckanext-opendatagovpy/styles/opendatagovpy.css' %}
+
+{% set datatypes = [_('string'), _('number'), _('integer'), _('date'), _('datetime'), _('boolean'),
+    _('binary'), _('object'), _('geopoint'), _('geojson'), _('array'), _('any')] %}
+
+
+<div data-module="custom-fields" data-module-field-selector=".schema-custom">
+
+
+            {% if new_resource %}
+                {% set count = 0 %}
+            {% else %}
+                {% set schema_fields = h.dpy_get_schema_fields() %}
+                {% set count = schema_fields|length %}
+            	{% for field in schema_fields %}
+                <div class="control-group schema-custom">
+
+                <label class="control-label">{{('Schema')}}</label>
+
+                <div class="controls">
+                <div class="input-prepend">
+                <label for="field-schema-{{loop.index0}}-attr" class="add-on">{{_('Attribute')}}</label><input id="field-schema-{{loop.index0}}-attr" type="text"
+                                                                                 name="schema__{{loop.index0}}__attr"
+                                                                                 value="{{field.get('name', '')}}"
+                                                                                 placeholder="">
+                <label for="field-schema-{{loop.index0}}-type" class="add-on">{{_('Type')}}</label>
+
+                <select id="field-schema-{{loop.index0}}-type" name="schema__{{loop.index0}}__type">
+	                {% set value = field.get('type', '') %}
+                    <option value="" selected></option>
+	                {% for option in datatypes %}
+                    <option value="{{option}}"{% if value == option %}selected='selected'{% endif %}>{{ option }}</option>
+	            {% endfor %}
+                </select>
+                </div>
+                <div class="input-prepend" style="margin-top:10px;width: 70%;">
+                    <label for="field-schema-{{loop.index0}}-description" class="add-on">{{_('Description')}}</label>
+                    <textarea id="field-schema-{{loop.index0}}-description" class="resource_description"
+                          name="schema__{{loop.index0}}__description" placeholder=""
+                          style="width:100%;height:20px">{{field.get('description','')}}</textarea>
+                    <label class="checkbox btn btn-danger icon-remove" for="field-schema-{{loop.index0}}-remove">
+                        <input type="checkbox" id="field-schema-{{loop.index0}}-remove" name="schema__0__deleted"> <span>{{_('Quitar')}}</span>
+                    </label>
+                </div>
+
+                    </div>
+
+        </div>
+                {% endfor %}
+
+            {% endif %}
+                    <div class="control-group schema-custom">
+
+             <label class="control-label">{{('Schema')}}</label>
+
+            <div class="controls">
+            <div class="input-prepend">
+                <label for="field-schema-{{count}}-attr" class="add-on">{{_('Attribute')}}</label><input id="field-schema-{{count}}-attr" type="text"
+                                                                                 name="schema__{{count}}__attr" value=""
+                                                                                 placeholder="">
+                <label for="field-schema-{{count}}-type" class="add-on">{{_('Type')}}</label>
+
+                <select id="field-schema-{{count}}-type" name="schema__{{count}}__type">
+                    <option value="" selected></option>
+	                {% for option in datatypes %}
+                    <option value="{{option}}">{{ option }}</option>
+	                {% endfor %}
+                </select>
+            </div>
+            <div class="input-prepend" style="margin-top:10px;width: 70%;">
+                <label for="field-schema-{{count}}-description" class="add-on">Description</label>
+                <textarea id="field-schema-{{count}}-description" class="resource_description"
+                          name="schema__{{count}}__description" placeholder="" style="width:100%;height:20px"></textarea>
+            </div>
+            </div>
+    </div>
+
+</div>
+    <input id="field-schema" type="hidden" name="schema" value="" placeholder="">
+
+<!--                                                                                                                -->
+    {% if new_resource %}
+        {% set extras = [] %}
+    {% else %}
+        {% set extras = h.dpy_get_dynamic_fields() %}
+    {% endif %}
+
+    {% block package_metadata_fields_custom %}
+    {% block custom_fields %}
+      {% snippet 'snippets/custom_form_fields.html', extras=extras, errors=errors, limit=3 %}
+    {% endblock %}
+  {% endblock %}
+
+  <input id="field-extras" type="hidden" name="dynamic" value="" placeholder="">
+

@@ -1,0 +1,5 @@
+{% ckan_extends %}
+
+{% block package_metadata_fields_custom %}
+    {% snippet 'package/snippets/opendatagovpy_package_custom_fields.html', data=data, errors=errors %}
+{% endblock %}

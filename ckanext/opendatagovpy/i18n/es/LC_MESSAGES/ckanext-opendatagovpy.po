@@ -1,0 +1,420 @@
+# Spanish translations for ckanext-opendatagovpy.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the
+# ckanext-opendatagovpy
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-opendatagovpy 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-06-12 09:05-0400\n"
+"PO-Revision-Date: 2014-06-10 12:02-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/opendatagovpy/templates/footer.html:6
+msgid "Based on"
+msgstr "Basado en"
+
+#: ckanext/opendatagovpy/templates/footer.html:14
+msgid "Site built and maintained by"
+msgstr "Portal construido y mantenido por la"
+
+#: ckanext/opendatagovpy/templates/footer.html:14
+msgid "SENATICs"
+msgstr "SENATICs"
+
+#: ckanext/opendatagovpy/templates/footer.html:15
+msgid "with support from "
+msgstr "con apoyo del"
+
+#: ckanext/opendatagovpy/templates/footer.html:15
+msgid "Programa de Democracia y Gobernabilidad"
+msgstr "Programa de Democracia y Gobernabilidad"
+
+#: ckanext/opendatagovpy/templates/footer.html:17
+msgid "2014 Secretaría Nacional de Tecnologías de la Información y Comunicación"
+msgstr "2014 Secretaría Nacional de Tecnologías de la Información y Comunicación"
+
+#: ckanext/opendatagovpy/templates/footer.html:18
+msgid ""
+"This site is under an Attribution-ShareAlike 4.0 International Creative "
+"Commons license."
+msgstr ""
+"Este portal se encuentra bajo licencias Creative Commons con Atribuciones"
+" de Licencia Internacional ShareAlike 4.0."
+
+#: ckanext/opendatagovpy/templates/home/index.html:38
+#: ckanext/opendatagovpy/templates/home/index.html:51
+#: ckanext/opendatagovpy/templates/home/index.html:64
+msgid "Here goes a sample text"
+msgstr "Este es un texto de ejemplo"
+
+#: ckanext/opendatagovpy/templates/home/index.html:40
+#: ckanext/opendatagovpy/templates/home/index.html:53
+#: ckanext/opendatagovpy/templates/home/index.html:66
+msgid "and this is a sample <a href=\"{link}\">link</a>"
+msgstr "y este es un <a href=\"{link}\">enlace</a> de ejemplo"
+
+#: ckanext/opendatagovpy/templates/home/index.html:45
+#: ckanext/opendatagovpy/templates/home/index.html:58
+#: ckanext/opendatagovpy/templates/home/index.html:70
+msgid "Image by"
+msgstr "Imagen por"
+
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:1
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:13
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque "
+"ultricies, dui eu mattis vehicula,\n"
+"    dolor odio rutrum elit, ut dictum lectus diam sit amet mauris. "
+"Integer at dolor id lacus elementum tincidunt\n"
+"    facilisis ac sem. Maecenas metus nisi, gravida non neque a, mattis "
+"vehicula nisl. Pellentesque congue mollis augue,\n"
+"    ut mattis arcu tristique non. Proin at ipsum nec ipsum tincidunt "
+"pharetra. In erat magna, fermentum nec semper nec,\n"
+"    blandit sit amet massa. Quisque quis tellus placerat, congue justo "
+"ut, lacinia arcu. Aenean at aliquam turpis,\n"
+"    quis lobortis dui. Etiam tincidunt felis euismod, gravida enim a, "
+"tristique sapien. Curabitur non justo dolor.\n"
+"    Curabitur cursus placerat eros id mattis. Duis tellus lacus, pulvinar"
+" in felis ac, eleifend interdum eros.\n"
+"    Sed venenatis, mauris quis sollicitudin aliquet, mi massa pharetra "
+"elit, in pulvinar mauris arcu sed augue.\n"
+"    In luctus vel libero nec dapibus. Nunc ultrices mauris pharetra sem "
+"dapibus mattis. Nunc vulputate dui eu turpis\n"
+"    accumsan, pretium posuere augue posuere.."
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/promoted.html:5
+msgid "Welcome to CKAN"
+msgstr "Bienvenido a CKAN"
+
+#: ckanext/opendatagovpy/templates/home/snippets/promoted.html:7
+msgid "This a test text for the promoted widget of the CKAN Portal."
+msgstr "Este es un texto destacado de ejemplo del portal CKAN."
+
+#: ckanext/opendatagovpy/templates/home/snippets/promoted.html:9
+msgid "It is two lines long."
+msgstr "Tiene dos líneas de longitud."
+
+#: ckanext/opendatagovpy/templates/home/snippets/promoted.html:13
+msgid "This is a featured section"
+msgstr "Esta es una sección destacada"
+
+#: ckanext/opendatagovpy/templates/home/snippets/search.html:2
+msgid "eg. Educational Institutions"
+msgstr "ejemplo: Instituciones Educativas"
+
+#: ckanext/opendatagovpy/templates/home/snippets/search.html:6
+msgid "Search Your Data"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/search.html:7
+msgid ""
+"Search the data, and get updates to the dataset and the categories in "
+"which you are interested."
+msgstr ""
+"Busca entre los datos, y obtén actualizaciones de los datasets y "
+"categorías en las cuales estás interesado."
+
+#: ckanext/opendatagovpy/templates/home/snippets/search.html:12
+msgid "Search"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:5
+msgid "Paraguay Government Data Portal Statistics"
+msgstr "Estadísticas del Portal de Datos Abiertos Gubernamentales del Paraguay"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:10
+msgid "datasets"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:16
+msgid "organization"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:16
+msgid "organizations"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:22
+msgid "group"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:22
+msgid "groups"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:28
+msgid "related item"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:28
+msgid "related items"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/additional_info.html:6
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:5
+msgid "Valid from"
+msgstr "Válido desde"
+
+#: ckanext/opendatagovpy/templates/package/snippets/additional_info.html:13
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:8
+msgid "Valid until"
+msgstr "Válido hasta"
+
+#: ckanext/opendatagovpy/templates/package/snippets/additional_info.html:20
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:17
+msgid "Spatial Validity"
+msgstr "Validez Espacial"
+
+#: ckanext/opendatagovpy/templates/package/snippets/additional_info.html:27
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:31
+msgid "Update Frequency"
+msgstr "Frecuencia de Actualización"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "Asunción"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "San Pedro"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "Concepción"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "Cordillera"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "Guairá"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:11
+msgid "Caaguazú"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Caazapá"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Itapúa"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Misiones"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Paraguarí"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Alto Paraná"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:12
+msgid "Central"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:13
+msgid "Ñeembucú"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:13
+msgid "Amambay"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:13
+msgid "Canindeyú"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:13
+msgid "Presidente Hayes"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:13
+msgid "Alto Paraguay"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:14
+msgid "Boquerón"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:29
+msgid "Yearly"
+msgstr "Anual"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:29
+msgid "Monthly"
+msgstr "Mensual"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:29
+msgid "Weekly"
+msgstr "Semanal"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_package_custom_fields.html:29
+msgid "Daily"
+msgstr "Diaria"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "string"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "number"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "integer"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "date"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "datetime"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:4
+msgid "boolean"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "binary"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "object"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "geopoint"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "geojson"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "array"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:5
+msgid "any"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:23
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:59
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:13
+msgid "Attribute"
+msgstr "Atributo"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:27
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:62
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:14
+msgid "Type"
+msgstr "Tipo"
+
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:38
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:15
+msgid "Description"
+msgstr "Descripción"
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:24
+msgid "Organization"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:28
+msgid "No organization"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:43
+msgid "Visibility"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:46
+msgid "Private"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:46
+msgid "Public"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:62
+msgid "State"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:65
+msgid "Active"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/package_basic_fields.html:66
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:2
+msgid "What's a resource?"
+msgstr "¿Qué es un recurso?"
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:4
+msgid "A resource can be any file or link to a file that contains useful data."
+msgstr ""
+"Un recurso puede ser cualquier archivo o enlace a un archivo que contiene"
+" datos útiles."
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:9
+msgid "What's a resource schema?"
+msgstr "¿Qué es el esquema de un recurso?"
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:11
+msgid "A resource schema is a description of the fields of the resource."
+msgstr "El esquema de un recurso es una descripción de los campos que contiene."
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:12
+msgid "For each field in the schema, the following properties can be defined:"
+msgstr "Para cada campo del esquema, pueden definirse las siguientes propiedades:"
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:13
+msgid "The name of the field as it is found in the resource."
+msgstr "El nombre del campo como se encuentra en el recurso."
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:14
+msgid "The data type of the field values."
+msgstr "El tipo de datos de los valores del campo."
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:15
+msgid "A short description of the field."
+msgstr "Una breve descripción del campo."
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:16
+msgid "These properties (and their values) are defined according to the"
+msgstr ""
+"Estas propiedades (y sus valores) se definen de acuerdo a la "
+"especificación"
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:17
+msgid "JSON Table Schema"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:17
+msgid "specification."
+msgstr "."
+
