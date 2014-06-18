@@ -168,11 +168,11 @@ msgstr "¿Quién es parte del equipo técnico?"
 msgid "The catalog is based on CKAN and all the code is in Github "
 msgstr ""
 "Este catálogo está basado en CKAN y todo su código fuente está disponible"
-" en Github,"
+" en Github, "
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:29
 msgid "here."
-msgstr " aquí"
+msgstr "aquí"
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:31
 msgid ""
