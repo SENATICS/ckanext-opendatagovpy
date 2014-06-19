@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # @author	Rodrigo Parra
 # @copyright	2014 Governance and Democracy Program USAID-CEAMSO
