@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-opendatagovpy 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-18 08:11-0400\n"
+"POT-Creation-Date: 2014-06-19 09:14-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,21 +49,38 @@ msgid ""
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/index.html:38
-#: ckanext/opendatagovpy/templates/home/index.html:51
-#: ckanext/opendatagovpy/templates/home/index.html:64
-msgid "Here goes a sample text"
+msgid "Open Government Data Catalog"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/index.html:40
-#: ckanext/opendatagovpy/templates/home/index.html:53
-#: ckanext/opendatagovpy/templates/home/index.html:66
-msgid "and this is a sample <a href=\"{link}\">link</a>"
+msgid ""
+"Encouraging public management transparency. Here you will find all available "
+"official datasets."
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/index.html:45
-#: ckanext/opendatagovpy/templates/home/index.html:58
-#: ckanext/opendatagovpy/templates/home/index.html:70
+#: ckanext/opendatagovpy/templates/home/index.html:44
+#: ckanext/opendatagovpy/templates/home/index.html:57
+#: ckanext/opendatagovpy/templates/home/index.html:68
 msgid "Image by"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:50
+msgid "Open Data"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:52
+msgid ""
+"Open Data can be freely used, reused and redistributed by anyone, subject "
+"only to, at most, requisites of attribution and\n"
+"                    redistribution under the same license."
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:63
+msgid "Paraguay Digital"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:65
+msgid "Efficiency, Inclusion and Digital Innovation"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:1
@@ -76,59 +93,73 @@ msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:2
 msgid ""
-"The Government is releasing public data to help people understand how "
-"government works and how policies are made.\n"
-"    Some of this data is already available, but"
+"The Government of Paraguay is releasing public data to help people understand"
+" how their government works and how government resources management is done."
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:3
-msgid ""
-"brings it together in one searchable website. Making this data\n"
-"    easily available means it will be easier for people to make decisions and"
-" suggestions about government policies based on\n"
-"    detailed information.\n"
+msgid "is a portal that allows access to these open government data."
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:9
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:4
+msgid ""
+"gives any citizen, institution, enterprise or employee free, simple and "
+"dynamic access to open government datasets. The goal of the portal\n"
+"is to encourage transparency by helping citizens to understand and find out "
+"about the government's management of public goods. "
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:7
+msgid ""
+"By doing this, citizen participation is encouraged, seeking to accomplish a "
+"higher government efficiency, which attracts economic development.\n"
+"    The content of the portal, made up of datasets, can also be used by "
+"application developers with the purpose of offering innovative and more "
+"accesible perspectives\n"
+"    to data given by the government. Through this, citizens are empowered by "
+"being able of proposing improvements to government services\n"
+"    based on new knowledge generation (Public value)."
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:12
 msgid "How can I use the data?"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:10
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:13
 msgid ""
 "You can use the data in all sorts of ways. This may be simply to analyse "
 "trends over time from one policy area,\n"
 "    or to compare how different parts of government go about their work. "
 "Technical users will be able to create useful\n"
 "    applications out of the raw data files, which can then be used by "
-"everyone.\n"
-"."
+"everyone."
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:16
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:18
 msgid "How can I add my organisation's data?"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:17
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:19
 msgid ""
 "There is a simple how-to guide that takes you through the steps needed to "
 "include your data in "
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:17
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:19
 msgid ""
 "'s\n"
 "    index by following this link:"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:18
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:20
 msgid "User Manual"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:21
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:23
 msgid "Who is involved in the project?"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:22
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:24
 msgid ""
 "is a key part of the Government's work on Transparency which\n"
 "    is being carried out by the National Secretary of ICT (SENATICs).\n"
@@ -136,23 +167,24 @@ msgid ""
 "Program funded by USAID and executed by CEAMSO."
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:27
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:29
 msgid "Who is part of the technical team?"
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:29
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:31
 msgid "The catalog is based on CKAN and all the code is in Github "
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:29
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:31
 msgid "here."
 msgstr ""
 
-#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:31
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:33
 msgid ""
 "The people working in the catalog are:\n"
 "\n"
-"Javier Quiñonez, Andrés Ortiz, Juan Pane, Rodrigo Parra."
+"Javier Quiñonez (SENATICs), Andrés Ortiz (SENATICs), Juan Pane (PDG), Rodrigo"
+" Parra (PDG)."
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/promoted.html:5
