@@ -145,11 +145,12 @@ body {
 .homepage-slider-ng .text-wrapper .footer-container {
   color: #fff;
   text-shadow: #000 2px 2px 5px;
-  position:relative;
+  position:absolute;
   text-align:right;
   font-weight:bold;
   font-size:12px;
-  bottom:-62%;
+  bottom:0%;
+  right:0%;
   z-index:20;
 }
 
