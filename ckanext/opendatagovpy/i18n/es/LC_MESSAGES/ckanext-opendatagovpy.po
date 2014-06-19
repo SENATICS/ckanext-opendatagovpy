@@ -563,3 +563,10 @@ msgstr ""
 msgid "specification."
 msgstr "."
 
+msgid "Key"
+msgstr "Clave"
+
+msgid "Value"
+msgstr "Valor"
+
+
