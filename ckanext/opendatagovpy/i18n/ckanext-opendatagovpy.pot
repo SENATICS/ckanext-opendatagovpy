@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-opendatagovpy 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-19 09:14-0400\n"
+"POT-Creation-Date: 2014-06-30 10:55-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,61 @@ msgid ""
 "Commons license."
 msgstr ""
 
+#: ckanext/opendatagovpy/templates/header.html:13
+msgid "Sysadmin settings"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:19
+msgid "View profile"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:26
+#, python-format
+msgid "Dashboard (%(num)d new item)"
+msgid_plural "Dashboard (%(num)d new items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/opendatagovpy/templates/header.html:34
+msgid "Edit settings"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:41
+msgid "Log out"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:53
+msgid "Log in"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:55
+msgid "Register"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:94
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:95
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:96
+msgid "Groups"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:97
+msgid "About"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:107
+msgid "Search Datasets"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/header.html:108
+msgid "Search datasets..."
+msgstr ""
+
 #: ckanext/opendatagovpy/templates/home/index.html:38
 msgid "Open Government Data Catalog"
 msgstr ""
@@ -59,28 +114,28 @@ msgid ""
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/index.html:44
-#: ckanext/opendatagovpy/templates/home/index.html:57
+#: ckanext/opendatagovpy/templates/home/index.html:56
 #: ckanext/opendatagovpy/templates/home/index.html:68
 msgid "Image by"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/index.html:50
-msgid "Open Data"
+msgid "Paraguay Digital"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/index.html:52
+msgid "Efficiency, Inclusion and Digital Innovation"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:62
+msgid "Open Data"
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/index.html:64
 msgid ""
 "Open Data can be freely used, reused and redistributed by anyone, subject "
 "only to, at most, requisites of attribution and\n"
 "                    redistribution under the same license."
-msgstr ""
-
-#: ckanext/opendatagovpy/templates/home/index.html:63
-msgid "Paraguay Digital"
-msgstr ""
-
-#: ckanext/opendatagovpy/templates/home/index.html:65
-msgid "Efficiency, Inclusion and Digital Innovation"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/about_text.html:1
@@ -185,6 +240,12 @@ msgid ""
 "\n"
 "Javier Quiñonez (SENATICs), Andrés Ortiz (SENATICs), Juan Pane (PDG), Rodrigo"
 " Parra (PDG)."
+msgstr ""
+
+#: ckanext/opendatagovpy/templates/home/snippets/about_text.html:39
+msgid ""
+"In case of need, you can contact the system administrator by sending an email"
+" to: "
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/home/snippets/promoted.html:5
@@ -431,6 +492,7 @@ msgid "Type"
 msgstr ""
 
 #: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:38
+#: ckanext/opendatagovpy/templates/package/snippets/opendatagovpy_resource_custom_fields.html:72
 #: ckanext/opendatagovpy/templates/package/snippets/resource_help.html:15
 msgid "Description"
 msgstr ""
