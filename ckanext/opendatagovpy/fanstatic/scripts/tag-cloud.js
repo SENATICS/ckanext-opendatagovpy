@@ -70,7 +70,7 @@ function createCloud(data) {
 	var minCount = Math.min.apply(null, count_array);
 	var maxCount = Math.max.apply(null, count_array);
 	var minSize = 20;
-	var maxSize = 100;
+	var maxSize = 50;
 
 	d3.layout.cloud()
 	.size([cwidth*0.9, cheight*0.9])
