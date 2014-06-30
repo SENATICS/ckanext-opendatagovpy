@@ -635,3 +635,14 @@ msgstr "."
 #~ msgid "Value"
 #~ msgstr "Valor"
 
+#~ msgid "You have 1 new activity on your {site_title} dashboard"
+#~ msgstr "Tienes una nueva actividad en tu pizarra de {site_title}"
+
+#~ msgid "You have {num} new activities on your {site_title} dashboard"
+#~ msgstr "Tienes {num} actividades nuevas en tu pizarra de {site_title}"
+
+#~ msgid "To view your dashboard, click on this link:"
+#~ msgstr "Para visitar tu pizarra, haz clic en este enlace:"
+
+#~ msgid "You can turn off these email notifications in your {site_title} preferences. To change your preferences, click on this link:"
+#~ msgstr "Puedes deshabilitar estas notificaciones por correo en tus preferencias de {site_title}. Para cambiar tus preferencias, haz clic en este enlace:"
