@@ -114,9 +114,10 @@ class ParaguayDatasetFormPlugin(plugins.SingletonPlugin,
 
 
     def edit(self, entity):
-        log.debug('Edit por favor!')
+        log.debug('Edit!')
         log.debug(entity)
-        if not self._user_is_admin(entity.owner_org):
+        if not entity.type == 'harvest' and not self._user_is_admin(entity.owner_org):
+            log.debug('Private!')
             entity.private = True
 
 
@@ -133,7 +134,6 @@ class ParaguayDatasetFormPlugin(plugins.SingletonPlugin,
         return pkg_dict
 
     def after_update(self, context, pkg_dict):
-        pkg_dict['private'] = True
         return pkg_dict
 
     def after_delete(self, context, pkg_dict):
@@ -149,7 +149,6 @@ class ParaguayDatasetFormPlugin(plugins.SingletonPlugin,
         return search_results
 
     def before_index(self, pkg_dict):
-        log.debug('Indeeeeexxxx')
         data_dict = json.loads(pkg_dict['data_dict'])
         extras_name = set()
         extras_description = set()
