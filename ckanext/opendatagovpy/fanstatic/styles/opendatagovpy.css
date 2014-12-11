@@ -114,6 +114,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
+  background-size: cover;
 }
 .homepage-slider-ng .text-wrapper .text-container {
   color: #fff;
@@ -122,7 +123,8 @@ body {
   text-shadow: #000 2px 2px 5px;
   font-size: 24px;
   line-height: 32px;
-  width: 1100px;
+  width: 100%;
+  max-width:1100px;
   margin: 0 auto;
 }
 .homepage-slider-ng .text-wrapper .text-container h3,
@@ -335,7 +337,6 @@ color: #FFFFFF;
           -moz-box-shadow: 0 0 5px 5px #b9c3c8;
           -webkit-box-shadow: 0 0 5px 5px #b9c3c8;
           box-shadow: 0 0 5px 5px #b9c3c8;
-          box-shadow: 1px 1px 0 #FFFF inset;
           opacity: 0.85;
 
           /*background: rgba(70,95,110,0.4);*/
@@ -364,8 +365,8 @@ text-align: center;
 }
 
 .homepage .stats ul li a b {
-   color: #d71e1e;
-text-shadow: 2px 1px 1px rgba(0, 0, 0, 1)
+   color: #efefef;
+text-shadow: 2px 1px 5px rgba(0, 0, 0, 1)
 }
 
 .homepage .stats ul li {
@@ -373,16 +374,16 @@ text-shadow: 2px 1px 1px rgba(0, 0, 0, 1)
 }
 
 .homepage .stats ul li a {
- color: #d71e1e;
-text-shadow: 0px 1px 0px rgba(0, 0, 0, 1)
+ color: #efefef;
+text-shadow: 0px 1px 5px rgba(0, 0, 0, 1)
 }
 
 .homepage .stats ul li a b:hover {
-   color: #FFFFFF;
+   color: #d5d5d5;
 
 }
 .homepage .stats ul li a:hover {
- color:#FFFFFF;
+ color:#d5d5d5;
 
 }
 
@@ -604,4 +605,62 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 
 .select2-container .select2-choice > .select2-chosen {
 text-shadow: initial;
+};
+
+@media only screen and (max-width: 700px){
+	.simple-input .field input{
+		margin:0 auto !important;
+		width:100% !important;
+		border-radius:0px !important;
+		border:0px !important;
+		margin-top:-2px !important;
+		margin-bottom:-2px !important;
+	}
+	.simple-input .field{
+		top:0 !important;	
+		padding:10px 5px !important;
+	}
+	.homepage-slider-ng{
+		height:848px !important;
+	}
+	.homepage.layout-2 .stats{
+		height:	inherit !important;
+		margin-top: 240px !important;
+	}
+	.span6{
+		width:100% !important;	
+	}
+	#tag-cloud > svg{
+		width:100% !important;
+	}
+	.institution{
+		margin-top:10px !important;
+		width:100% !important;
+		margin-right:20px !important;
+	}
+	.footer-links, .attribution{
+		width:80% !important;	
+	}
+	
+		
+}
+
+.box{
+	border:3px solid #eee !important;
+	border-radius: 0px !important;
+	box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+}
+#tag-cloud{
+	background:	rgba(0,0,0,.7) !important;
+	border:3px solid #ccc !important;
+}
+.module-content search-form p{
+	background:rgba(0,0,0,.3)!important;
+	padding:10px!important;
+}
+.homepage .module-search .search-form .heading{
+	background:rgba(0,0,0,.3)!important;
+	padding:10px!important;
+	margin-top:40px !important;
 }
