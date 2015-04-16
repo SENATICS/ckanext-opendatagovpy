@@ -1,7 +1,16 @@
 {% ckan_extends %}
 
 {% block content %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-57623492-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 
 {% resource 'ckanext-opendatagovpy/scripts/d3.layout.cloud.js' %}
@@ -9,6 +18,127 @@
 {% resource 'ckanext-opendatagovpy/scripts/homepage-slider.js' %}
 {% resource 'ckanext-opendatagovpy/scripts/homepage-feed.js' %}
 
+<style>
+
+@media only screen and (min-width: 968px) {
+	.nube{
+		height:400px !important;	
+	}
+	.images-wrapper{
+		height:100% !important;	
+		z-index:0 !important;
+	}
+	.homepage-slider-ng .boxes-wrapper{
+		top:160px !important;	
+		bottom: inherit !important;
+	}
+	.site-footer{
+		bottom:0px !important;	
+		position:fixed !important;
+		width:100% !important;
+		z-index:10 !important;
+	}
+	.homepage .module-search .search-form .heading{
+		margin-top:0 !important;	
+		padding:0 10px !important;
+	}
+	.homepage .module-search .search-giant{
+		margin-bottom:0 !important;	
+	}
+	.homepage .module-search .search-giant input{
+		border-color:#999 !important;	
+	}
+	.search-form .search-input.search-giant input{
+		font-size:13px !important;	
+		padding:10px !important;
+	}
+	.homepage .module-search .search-form{
+		height:auto !important;
+	}	
+	.homepage .module-search{
+		height:214px !important;	
+	}
+	.homepage-slider-ng .text-wrapper .text-container{
+		padding-top:20px !important;	
+	}
+	.homepage-slider-ng{
+		margin-top:160px;
+	}
+	#twitter-widget-0{
+		height:300px !important;	
+	}
+	.account-masthead{
+		z-index:5555;
+		position:fixed;
+		width:100%;	
+		top:0 !important;
+	}
+	header.masthead{
+		z-index:555;
+		position:fixed;
+		width:100%;	
+		top: 30px;
+	}
+	.homepage .box .inner{
+		padding:10px;	
+	}
+	.homepage.layout-2 .stats{
+		height:165px !important;
+		margin-bottom:15px !important;	
+		border:2px solid #fff !important;
+		border-radius:10px;
+	}
+	.homepage .module-search{
+		height:169px !important
+	}
+	.homepage .module-search .search-form{
+		padding:3px !important;	
+	}
+  	.span6, .group-list{
+		height:320px !important;  
+  	}
+	form{
+		margin:0 0 5px !important;	
+	} 
+	.images-wrapper{
+		position:fixed;	
+		top:auto !important;
+	}
+	#tag-cloud{
+		background:rgba(244,244,236,.8);
+		height:300px !important;
+		box-sizing:border-box;
+		padding:70px !important;
+	}
+	.timeline{
+		background:rgba(163,198,206,.8) !important;
+	}
+	.customisable-border{
+		border:2px solid #fff !important;	
+	}
+	.homepage .module-search{
+		border:0px !important;
+		padding:0px !important;
+		background:none !important	
+	}
+	.homepage .module-search .module-content{
+		border-radius:10px !important;	
+		border:2px solid #fff !important;	
+	}
+	.homepage .stats h3{
+		font-size:17px;	
+	}
+	.homepage-slider-ng .text-wrapper .text-container{
+		background:rgba(0,0,0,.3) !important;
+		padding:10px !important;
+		border-radius:0px 0px 20px 20px !important;
+	}
+	.homepage-slider-ng .text-wrapper .text-container h3, .homepage-slider-ng .text-wrapper .text-container .text-row{
+		background:rgba(0,0,0,0) !important;	
+	}	
+}
+
+</style>
 
 <div class="main homepage layout-2">
     {{ self.primary_content() }}
@@ -31,9 +161,39 @@
 
 
 <div class="homepage-slider-ng">
+    <div class="boxes-wrapper container">
+        <div class="row row1">
+            <div class="span4 col1">
+                {% snippet 'home/snippets/search.html' %}
+            </div>
+            <div class="span8 col2">
+                {% snippet 'home/snippets/stats.html' %}
+                <div class="row group-listing" style="margin-top: 10px;">
+                </div>
+            </div>
+            
+        </div>
+        <div class="row row1">
+        	<div class="span8 col1 nube">
+                <div id="tag-cloud"></div>
+            </div>
+            
+            <div class="span4 col2">
+                <section class="group-list module module-narrow module-shallow" style="height:300px">
+                    <a class="twitter-timeline" href="https://twitter.com/SENATICs" data-widget-id="479605643402162176">Tweets por @SENATICs</a>
+                    <script>
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    </script>
+                </section>
+            </div>
+        </div>
+    </div>
+    
     <div class="images-wrapper">
 
-        <div class="text-wrapper" style="background-image:url(/images/home-slider/palacio.jpg)">
+        <div class="text-wrapper" style="background-image:url(/images/home-slider/cabildo.jpg)">
             <div class="text-container">
                 <div><h3>{{ _("Open Government Data Catalog") }}</h3></div>
                 <div class="text-row">
@@ -41,7 +201,7 @@
                 </div>
 
             </div>
-            <div class="footer-container"><a href="http://es.wikipedia.org/wiki/Palacio_de_los_L%C3%B3pez#mediaviewer/Archivo:Palacio_de_L%C3%B3pez_de_noche.jpg">{{_('Image by')}} Marco Bogarín. CC BY 2.0.</a></div>
+            <div class="footer-container"><a href="http://www.senatur.gov.py/">{{_('Image by')}} SENATUR CC BY 2.0.</a></div>
         </div>
 
         <div class="text-wrapper"
@@ -53,11 +213,11 @@
                 </div>
             </div>
             <div class="footer-container">
-                <a href="https://www.flickr.com/photos/cesar_camilla/9623770415/in/photostream/">{{_('Image by')}} César I. Martins. CC BY 2.0.</a>
+                <a href="http://www.senatur.gov.py/">{{_('Image by')}} SENATUR CC BY 2.0.</a>
             </div>
         </div>
 
-        <div class="text-wrapper" style="background-image:url(/images/home-slider/cabildo.jpg);display:none;">
+        <div class="text-wrapper" style="background-image:url(/images/home-slider/palacio.jpg);display:none;">
             <div class="text-container">
                 <div><h3>{{ _("Open Data") }}</h3></div>
                 <div class="text-row">
@@ -65,49 +225,10 @@
                     redistribution under the same license.")}}
                 </div>
             </div>
-            <div class="footer-container"><a href="http://es.wikipedia.org/wiki/Asunci%C3%B3n#mediaviewer/Archivo:Antiguo_Cabildo_Asunci%C3%B3n.jpg">{{_('Image by')}} Felipe Méndez. CC BY SA 3.0.</a></div>
+            <div class="footer-container"><a href="http://www.senatur.gov.py/">{{_('Image by')}} SENATUR CC BY SA 3.0.</a></div>
         </div>
     </div>
-    <div class="boxes-wrapper container">
-                <div class="row row1">
-            <div class="span6 col1">
-                {% snippet 'home/snippets/stats.html' %}
-                <div class="row group-listing" style="margin-top: 10px;">
-</div>
-            </div>
-            <div class="span6 col2">
-                <div id="tag-cloud"></div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div role="main" class="hero">
-    <div class="container">
-        <div class="row row1">
-            <div class="span6 col1">
-        {% snippet 'home/snippets/search.html' %}
-
-    </div>
-
-    <div class="span6 col2">
-         <section class="group-list module module-narrow module-shallow" style="height:300px">
-                <a class="twitter-timeline" href="https://twitter.com/SENATICs" data-widget-id="479605643402162176">Tweets
-                    por @SENATICs</a>
-                <script>
-                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-                </script>
-
-
-            </section>
-    </div>
-        </div>
-
-    </div>
+    	
 </div>
 
 

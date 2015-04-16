@@ -28,7 +28,14 @@ MA 02111-1301, USA.
 -->
 {% ckan_extends %}
 
+{% block title %}Bienvenido al Catálogo de Datos Abiertos Gubernamentales{% endblock %}
+
 {% block styles %}
   {{ super() }}
   {% resource 'ckanext-opendatagovpy/styles/opendatagovpy.css' %}
 {% endblock %}
+
+    {% block meta %}
+      {{ super() }}
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% endblock %}

@@ -298,6 +298,10 @@ msgstr "En caso de necesidad, puedes contactar al administrador del sistema envi
 msgid "Welcome to CKAN"
 msgstr "Bienvenido a CKAN"
 
+#: ckanext/opendatagovpy/templates/base.html:31
+msgid "Welcome to Open Government Data Catalog"
+msgstr "Bienvenido al Catálogo de Datos Abiertos Gubernamentales"
+
 #: ckanext/opendatagovpy/templates/home/snippets/promoted.html:7
 msgid "This a test text for the promoted widget of the CKAN Portal."
 msgstr "Este es un texto destacado de ejemplo del portal CKAN."
