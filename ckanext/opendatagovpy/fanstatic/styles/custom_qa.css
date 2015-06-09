@@ -1,0 +1,51 @@
+/* Common: Star-Rating for datasets */
+/* -------------------------------- */
+.star-rating {
+    > .tooltip {
+        display: none;
+    }
+    > a {
+        color: #333;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .last-updated {
+        font-size: 10px;
+    }
+}
+
+.star-rating.tooltip {
+    display: none;
+}
+
+.star-rating-tooltip {
+  /* Tooltips hover at the top level of the DOM, remember */
+  opacity: 1 !important;
+  .star-rating-reason {
+      margin-bottom: 2px;
+      border-bottom: 1px solid #999;
+  }
+  .star-rating-last-updated {
+      margin-top: 2px;
+      padding-top: 2px;
+      border-top: 1px solid #999;
+      text-align: left;
+      width: 400px;
+  }
+  .star-rating-reason,
+  .star-rating-entry {
+      text-align: left;
+      padding: 2px 0;
+      &.fail {
+          color: #999;
+      }
+  }
+  > .tooltip-inner {
+      background: #444;
+      max-width: 500px;
+  }
+  > .tooltip-arrow {
+      border-right-color: #444 !important;
+  }
+}

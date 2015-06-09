@@ -50,7 +50,8 @@ class ParaguayResourceFormPlugin(plugins.SingletonPlugin):
     def get_helpers(self):
         return {
             'dpy_get_schema_fields': self._get_schema_fields,
-            'dpy_get_dynamic_fields': self._get_dynamic_fields
+            'dpy_get_dynamic_fields': self._get_dynamic_fields,
+            'check_access_plotly' : self.check_access_plotly
         }
 
     def _get_schema_fields(self):
@@ -88,4 +89,13 @@ class ParaguayResourceFormPlugin(plugins.SingletonPlugin):
         else:
             self._dynamic_fields = []
         return resource_dict
+
+
+    def check_access_plotly(self, format):
+        #log.debug("check_access_plotly")
+        # No se puede usar el tamanio porque no esta seteado en la base de datos
+        can_open = False
+        if format == 'csv' or format == 'xls' or format == 'xlsx':
+            can_open = True
+        return can_open
 

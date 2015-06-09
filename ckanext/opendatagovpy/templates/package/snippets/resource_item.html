@@ -1,0 +1,14 @@
+{% ckan_extends %}
+{% set can_open_with_plotly = h.check_access_plotly(format=res.format.lower()) %}
+
+{% block resource_item_explore_links %}
+    {{ super() }}
+    <li>
+    <a href="https://plot.ly/external/?url={{ res.url }}&accessType=DOWNLOAD" class="resource-url-analytics" target="_blank">
+      {% if can_open_with_plotly %}
+        <i class="icon-download"></i>
+        {{ _('Open with Plot.ly') }}
+      {% endif %}
+    </a>
+  </li>
+{% endblock %}

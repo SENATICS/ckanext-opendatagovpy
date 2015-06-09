@@ -1,0 +1,17 @@
+{% ckan_extends %}
+
+{% block resource_read_url %}
+  {{ super() }}
+  {% set openness = h.get_resource_openness(c.resource.id) %}
+  {{ h.render_stars(openness['stars'], openness['reason'], None) }}
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  {% resource 'ckanext-opendatagovpy/styles/custom_qa.css' %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  {% resource 'ckanext-opendatagovpy/scripts/custom_qa.js' %}
+{% endblock %}

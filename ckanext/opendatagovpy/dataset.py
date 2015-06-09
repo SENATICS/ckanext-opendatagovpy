@@ -183,6 +183,9 @@ class ParaguayDatasetFormPlugin(plugins.SingletonPlugin,
         pkg_dict['extras_description'] = ' '.join(extras_description)
         pkg_dict['extras_attributes'] = ' '.join(extras_attributes)
         pkg_dict['extras_values'] = ' '.join(extras_values)
+        # Agrega el campo openness_score con el valor calculado para el dataset a partir de sus recursos
+        import openness as o
+        pkg_dict['extras_openness_score'] = o.get_dataset_openness(pkg_dict['id'])['stars']
         log.debug(pkg_dict)
         return pkg_dict
 
