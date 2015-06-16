@@ -58,7 +58,7 @@ setup(
         opendatagovpy_dataset = ckanext.opendatagovpy.dataset:ParaguayDatasetFormPlugin
         opendatagovpy_resource = ckanext.opendatagovpy.resource:ParaguayResourceFormPlugin
         paraguay_harvester = ckanext.opendatagovpy.harvester:ParaguayCKANHarvester
-
+        openness = ckanext.opendatagovpy.openness:ParaguayOpennessPlugin
         [paste.paster_command]
         translations=ckanext.opendatagovpy.translation:TranslationsCommand
     ''',

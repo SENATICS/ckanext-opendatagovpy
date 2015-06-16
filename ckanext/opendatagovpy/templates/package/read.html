@@ -1,0 +1,22 @@
+{% ckan_extends %}
+
+{% block package_description %}
+  {{ super() }}
+  {% set openness = h.get_dataset_openness(pkg.id) %}
+  {{ h.render_stars(openness['stars'], openness['reason'], None) }}
+{% endblock %}
+
+{% block package_additional_info %}
+  {{ super() }}
+  {{ h.openness_stars(pkg.get('id','')) }}
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  {% resource 'ckanext-opendatagovpy/styles/custom_qa.css' %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  {% resource 'ckanext-opendatagovpy/scripts/custom_qa.js' %}
+{% endblock %}
