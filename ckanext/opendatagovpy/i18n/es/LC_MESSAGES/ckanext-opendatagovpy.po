@@ -1306,4 +1306,27 @@ msgstr "Algo malo ha ocurrido: "
 msgid "Great job!"
 msgstr "Excelente trabajo!"
 
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:18
+msgid "Institution"
+msgstr "Institución"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:18
+msgid "Intitutions"
+msgstr "Instituciones"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:25
+msgid "Category"
+msgstr "Categoría"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:25
+msgid "Categories"
+msgstr "Categorías"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:32
+msgid "Application with Open Data"
+msgstr "Aplicación con Datos Abiertos"
+
+#: ckanext/opendatagovpy/templates/home/snippets/stats.html:32
+msgid "Applications with Open Data"
+msgstr "Aplicaciones con Datos Abiertos"
 

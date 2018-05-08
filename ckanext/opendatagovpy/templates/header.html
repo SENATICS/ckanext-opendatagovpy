@@ -101,6 +101,27 @@
                 ('about', _('About'))
               ) }}
             {% endblock %}
+            <style>
+            .boton_consulta{
+              background: rgba(255,255,255,0.7);
+            }
+            .boton_consulta:hover{
+              background: rgba(255,255,255,1);
+
+            }
+            </style>
+            <li>
+            	<a href="https://www.datos.gov.py/related">
+            		Aplicaciones con Datos Abiertos
+            	</a>
+        	</li>
+
+            <li class="boton_consulta">
+	            <a href="https://www.paraguay.gov.py/consultas-publicas-datos-abiertos" target="_blank">
+	            	<i class="icon-bullhorn" style="color: dodgerblue;"></i>
+	            	<small style="color: green;"> Consulta Pública: Pedí tus datos abiertos</small>
+	            </a>
+            </li>
           </ul>
         </nav>
       {% endblock %}

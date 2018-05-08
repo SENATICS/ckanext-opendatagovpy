@@ -6,30 +6,26 @@
     <ul>
       <li>
         <a href="{{ h.url_for(controller='package', action='search') }}">
-        <img src="/images/stats/datasets.png" width="30px" height="auto"/>
           <b>{{ h.SI_number_span(stats.dataset_count) }}</b>
-          {{ _('Dataset') if stats.dataset_count == 1 else _('Datasets') }}
+          {{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}
         </a>
       </li>
       <li>
         <a href="{{ h.url_for(controller='organization', action='index') }}">
-        <img src="/images/stats/institutions.png" width="30px" height="auto"/>
           <b>{{ h.SI_number_span(stats.organization_count) }}</b>
-          {{ _('Institution') if stats.organization_count == 1 else _('Intitutions') }}
+          {{ _('organization') if stats.organization_count == 1 else _('organizations') }}
         </a>
       </li>
       <li>
         <a href="{{ h.url_for(controller='group', action='index') }}">
-        <img src="/images/stats/categories.png" width="30px" height="auto"/>
           <b>{{ h.SI_number_span(stats.group_count) }}</b>
-          {{ _('Category') if stats.group_count == 1 else _('Categories') }}
+          {{ _('group') if stats.group_count == 1 else _('groups') }}
         </a>
       </li>
       <li>
         <a href="{{ h.url_for(controller='related', action='dashboard') }}">
-        <img src="/images/stats/applications.png" width="30px" height="auto"/>
           <b>{{ h.SI_number_span(stats.related_count) }}</b>
-          {{ _('Application with Open Data') if stats.related_count == 1 else _('Applications with Open Data') }}
+          {{ _('related item') if stats.related_count == 1 else _('related items') }}
         </a>
       </li>
     </ul>

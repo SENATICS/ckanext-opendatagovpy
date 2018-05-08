@@ -73,7 +73,7 @@
 	.homepage .box .inner{
 		padding:10px;	
 	}
-	.homepage.layout-2 .stats {
+	.homepage.layout-2 .stats{
 		height:165px !important;
 		margin-bottom:15px !important;	
 		border:2px solid #fff !important;
@@ -112,7 +112,7 @@
 		padding:0px !important;
 		background:none !important	
 	}
-	.homepage .module-search .module-content ,.votacion{
+	.homepage .module-search .module-content{
 		border-radius:10px !important;	
 		border:2px solid #fff !important;	
 	}
@@ -150,30 +150,7 @@
 
 </script>
 
-<style>
-	.button {
-	margin-bottom: 150px;
-    background-color: #008CBA; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    text-decoration: none !important;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-.button:hover{
-	background-color: #0ebff9;
-}
 
-
-</style>
 <div class="homepage-slider-ng">
     <div class="boxes-wrapper container">
         <div class="row row1">
@@ -187,16 +164,12 @@
             </div>
             
         </div>
-        
         <div class="row row1">
-        	
+        	<div class="span8 col1 nube">
+                <div id="tag-cloud"></div>
+            </div>
+            
             <div class="span4 col2">
-	        	<img class="votacion" src="https://www.paraguay.gov.py/documents/10179/519993/datos+abiertos.gif" width="300" height="auto">
-				<br>
-				<a class="button" href="https://www.paraguay.gov.py/datos-abiertos/curso" target="_blank">Inscribite aquí</a>
-				<br>
-	        </div>
-            <div class="span4 col3">
                 <section class="group-list module module-narrow module-shallow" style="height:300px">
                     <a class="twitter-timeline" href="https://twitter.com/SENATICs" data-widget-id="479605643402162176">Tweets por @SENATICs</a>
                     <script>
@@ -206,17 +179,12 @@
                     </script>
                 </section>
             </div>
-
-            <div class="span4 col1 nube">
-                <div id="tag-cloud"></div>
-            </div>
         </div>
     </div>
     
     <div class="images-wrapper">
 
-        <div class="text-wrapper" 
-        	 style="background-image:url(/images/home-slider/cabildo.jpg)">
+        <div class="text-wrapper" style="background-image:url(https://www.datos.gov.py/images/home-slider/cabildo.jpg)">
             <div class="text-container">
                 <div><h3>{{ _("Open Government Data Catalog") }}</h3></div>
                 <div class="text-row">
@@ -228,7 +196,7 @@
         </div>
 
         <div class="text-wrapper"
-             style="background-image:url(/images/home-slider/itaipu.jpg);display:none;">
+             style="background-image:url(https://www.datos.gov.py/images/home-slider/itaipu.jpg);display:none;">
             <div class="text-container">
                 <div><h3>{{ _("Paraguay Digital") }}</h3></div>
                 <div class="text-row">
@@ -240,8 +208,7 @@
             </div>
         </div>
 
-        <div class="text-wrapper" 
-             style="background-image:url(/images/home-slider/palacio.jpg);display:none;">
+        <div class="text-wrapper" style="background-image:url(https://www.datos.gov.py/images/home-slider/palacio.jpg);display:none;">
             <div class="text-container">
                 <div><h3>{{ _("Open Data") }}</h3></div>
                 <div class="text-row">

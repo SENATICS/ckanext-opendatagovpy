@@ -93,7 +93,7 @@ $(document).ready(function(){
 
         $('.footer-container').each(function( index ) {
             var img = new Image;
-            img.src = $(this).parent().css('background-image').replace(/url\(|\)$/ig, "");
+            /*img.src = $(this).parent().css('background-image').replace(/url\(|\)$/ig, "");
             var footer = $(this);
 
             $(img).on('load', function(){
@@ -103,7 +103,7 @@ $(document).ready(function(){
                     margin = ($(window).width() - bgImgWidth)/2;
                 }
                 footer.css('margin-right', margin);
-            });
+            });*/
 
         });
     }
