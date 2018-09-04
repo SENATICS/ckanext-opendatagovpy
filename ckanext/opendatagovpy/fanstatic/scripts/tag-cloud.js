@@ -27,8 +27,8 @@
  * MA 02111-1301, USA.
  */
 
-var cwidth = 470;
-var cheight = 220;
+var cwidth = 300;
+var cheight = 500;
 
 var words_array = new Array();
 var count_array = new Array();
@@ -40,7 +40,7 @@ function draw(words) {
     .attr("width", cwidth)
     .attr("height", cheight)
     .append("g")
-    .attr("transform", "translate(215,110)")
+    .attr("transform", "translate(150,200)")
     .selectAll("text")
     .data(words)
     .enter().append("text")
@@ -69,8 +69,8 @@ function createCloud(data) {
 
 	var minCount = Math.min.apply(null, count_array);
 	var maxCount = Math.max.apply(null, count_array);
-	var minSize = 20;
-	var maxSize = 50;
+	var minSize = 18;
+	var maxSize = 35;
 
 	d3.layout.cloud()
 	.size([cwidth*0.9, cheight*0.9])

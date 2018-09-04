@@ -79,7 +79,9 @@
       {% block header_logo %}
         {% if g.site_logo %}
           <a class="logo" href="{{ h.url('home') }}"><img src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
-						     <img style="float:right; padding: 10px 0px 0px;" src="/images/gobierno_nacional.png" /> 
+            <!--    <img style="float:right; padding: 10px 0px 0px;" src="/images/gobierno_nacional.png" /> -->
+            <img class="logo2"  src="/images/Paraguay-de-la-Gente-ALT.png" />
+            <img  class="logo2" src="/images/Gobierno-Nacional-ALT.png"/>
 
 	{% else %}
           <h1>
@@ -103,11 +105,20 @@
             {% endblock %}
             <style>
             .boton_consulta{
-              background: rgba(255,255,255,0.7);
+              background: #FFF !important;
+              color: #791414 !important;
+              border-radius:5px;
+              transition: all .2s;
+              margin-left: 10px;
             }
             .boton_consulta:hover{
-              background: rgba(255,255,255,1);
-
+              background: #791414 !important;
+              color: #FFF !important;
+              transition: all .2s;
+            }
+            .boton_consulta:hover .icon-bullhorn{
+              color: #FFF !important;
+              transition: all .2s;
             }
             </style>
             <li>
@@ -116,10 +127,10 @@
             	</a>
         	</li>
 
-            <li class="boton_consulta">
-	            <a href="https://www.paraguay.gov.py/consultas-publicas-datos-abiertos" target="_blank">
-	            	<i class="icon-bullhorn" style="color: dodgerblue;"></i>
-	            	<small style="color: green;"> Consulta Pública: Pedí tus datos abiertos</small>
+            <li>
+	            <a href="https://www.paraguay.gov.py/consultas-publicas-datos-abiertos" target="_blank" class="boton_consulta">
+	            	<i class="icon-bullhorn"></i>
+	            	Consulta Pública: Pedí tus datos abiertos
 	            </a>
             </li>
           </ul>

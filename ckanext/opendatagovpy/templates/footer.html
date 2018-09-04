@@ -19,13 +19,15 @@
             {% snippet "snippets/language_selector.html" %}
             {% endblock %}
         </div>
-        <div class="institution">
+        <div class="institution" style="text-align: right;">
             <p>{{ _('Site built and maintained by') }} <a href="https://www.senatics.gov.py/" title="Secretaría Nacional de Tecnologías de la Información y Comunicación">{{ _('SENATICs') }}</a></br>
                {{ _('with support from ') }} <a href="http://www.ceamso.org.py/es/proyectos/20-programa-de-democracia-y-gobernabilidad" title="Programa de Democracia y Gobernabilidad (USAID-CEAMSO)">{{ _('Programa de Democracia y Gobernabilidad') }}</a> (USAID-CEAMSO)</p>
             <a rel="license" href="https://www.paraguay.gov.py/datos-abiertos/licencias" title="{{ _('Este Portal s encuentra bajo la Licencia del Estado Paraguayo.') }}">
-            Licencia del Estado Paraguayo
-            <!--<img style="border-width:0; float:left;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png">-->
-            </a><p>{{ _('2017 Secretaría Nacional de Tecnologías de la Información y Comunicación') }}</p>
+                Licencia del Estado Paraguayo
+                <!--<img style="border-width:0; float:left;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png">-->
+                <img style="padding-left:10px;" src="https://cdn.paraguay.gov.py/marca-SENATICs/marca-senatics-claro.png" width="100">
+            </a>
+            <!--<p>{{ _('2018 Secretaría Nacional de Tecnologías de la Información y Comunicación') }}</p>-->
             
         </div>
         {% endblock %}
